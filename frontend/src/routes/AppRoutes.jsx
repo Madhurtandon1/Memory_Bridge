@@ -4,31 +4,26 @@ import {
   Navigate,
 } from "react-router-dom";
 
-import Login from "../pages/auth/Login.jsx";
-import Register from "../pages/auth/Register.jsx";
-
-import Dashboard from "../pages/dashboard/Dashboard.jsx";
-
-import Memories from "../pages/memories/Memories.jsx";
-import Collections from "../pages/collections/Collections.jsx";
-import CollectionDetails from "../pages/collections/CollectionDetails.jsx";
-import Timeline from "../pages/timeline/Timeline.jsx";
-import Stories from "../pages/stories/Stories.jsx";
-import Insights from "../pages/insights/Insights.jsx";
+import Login from "../pages/Auth/Login.jsx";
+import Register from "../pages/Auth/Register.jsx";
+import Dashboard from "../pages/Dashboard/Dashboard.jsx";
+import Memories from "../pages/Memories/Memories.jsx";
+import Collections from "../pages/Collections/Collections.jsx";
+import CollectionDetails from "../pages/Collections/CollectionDetails.jsx";
+import Timeline from "../pages/Timeline/Timeline.jsx";
+import Stories from "../pages/Stories/Stories.jsx";
+import Insights from "../pages/Insights/Insights.jsx";
+import MemoryDetails from "../pages/Memories/MemoryDetails.jsx";
+import EditMemory from "../pages/Memories/EditMemory.jsx";
+import EditCollection from "../pages/Collections/EditCollection.jsx";
+import CreateCollection from "../pages/Collections/CreateCollection.jsx";
+import Profile from "../pages/Profile/Profile.jsx";
+import ForgotPassword from "../pages/Auth/ForgotPassword.jsx";
+import MemoryByText from "../pages/Memories/MemoryBYText.jsx";
+import MemoryByAudio from "../pages/Memories/MemoryByAudio.jsx";
 import Assistant from "../pages/assistant/Assistant.jsx";
-import MemoryDetails from "../pages/memories/MemoryDetails.jsx";
-import EditMemory from "../pages/memories/EditMemory.jsx";
-import EditCollection from "../pages/collections/EditCollection.jsx";
-import CreateCollection from "../pages/collections/CreateCollection.jsx";
 import LegalAndSecurity from "../pages/legal/LegalAndSecurity.jsx";
-import Profile from "../pages/profile/Profile.jsx";
-import ForgotPassword from "../pages/auth/ForgotPassword.jsx";
-import MemoryByText from "../pages/memories/MemoryBYText.jsx";
-import MemoryByAudio from "../pages/memories/MemoryByAudio.jsx";
-
-
 import ProtectedRoute from "./ProtectedRoute.jsx";
-
 import AppRoute from "../components/layout/AppLayout.jsx";
 
 const AppRoutes = () => {
