@@ -12,13 +12,13 @@ export const processMemoryWithAI = async (filePath) => {
   );
 
   const response = await axios.post(
-    "http://127.0.0.1:8000/process-memory/",
-    formData,
-    {
-      headers: formData.getHeaders(),
-      maxBodyLength: Infinity
-    }
-  );
+  `${process.env.ML_SERVICE_URL}/process-memory/`,
+  formData,
+  {
+    headers: formData.getHeaders(),
+    maxBodyLength: Infinity
+  }
+);
 
   return response.data;
 };
