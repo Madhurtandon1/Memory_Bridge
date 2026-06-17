@@ -37,7 +37,12 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(cookieParser());
 
-
+app.get("/", (req, res) => {
+  res.status(200).json({
+    success: true,
+    service: "MemoryBridge Backend"
+  });
+});
 
 
 app.use("/api", apiLimiter);
