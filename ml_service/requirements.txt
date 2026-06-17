@@ -1,0 +1,13 @@
+fastapi==0.123.8
+uvicorn==0.38.0
+
+python-dotenv
+python-multipart
+
+google-generativeai
+google-api-core
+
+requests
+
+openai-whisper
+torch
