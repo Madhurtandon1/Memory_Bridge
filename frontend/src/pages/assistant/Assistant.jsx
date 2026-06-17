@@ -660,12 +660,12 @@ import {
   deleteChat,
   deleteAllChats,
   pinChat
-} from "../../services/chat.api";
+} from "../../services/chat.api.js";
 
-import ChatSidebar from "../../components/chat/ChatSidebar";
-import ChatBubble from "../../components/chat/ChatBubble";
-import ChatInput from "../../components/chat/ChatInput";
-import ConfirmModal from "../../components/ui/ConfirmModal"; // Make sure path matches your file structure
+import ChatSidebar from "../../components/chat/ChatSidebar.jsx";
+import ChatBubble from "../../components/chat/ChatBubble.jsx";
+import ChatInput from "../../components/chat/ChatInput.jsx";
+import ConfirmModal from "../../components/ui/ConfirmModal.jsx"; // Make sure path matches your file structure
 import toast from "react-hot-toast";
 
 export default function Assistant() {

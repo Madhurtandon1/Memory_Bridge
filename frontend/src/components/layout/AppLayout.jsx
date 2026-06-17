@@ -99,9 +99,9 @@
 
 import { useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
-import Sidebar from "./Sidebar";
-import Navbar from "./Navbar";
-import { useUI } from "../../context/UIContext";
+import Sidebar from "./Sidebar.jsx";
+import Navbar from "./Navbar.jsx";
+import { useUI } from "../../context/UIContext.jsx";
 
 export default function AppLayout() {
   const { sidebarOpen, setSidebarOpen } = useUI();

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import {
   getInsights
-} from "../../services/memory.api";
+} from "../../services/memory.api.js";
 
 export default function Insights() {
 

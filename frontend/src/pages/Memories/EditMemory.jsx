@@ -443,8 +443,8 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
-import { getMemoryById, updateMemory } from "../../services/memory.api";
-import { getCollections } from "../../services/collection.api";
+import { getMemoryById, updateMemory } from "../../services/memory.api.js";
+import { getCollections } from "../../services/collection.api.js";
 
 export default function EditMemory() {
   const { id } = useParams();

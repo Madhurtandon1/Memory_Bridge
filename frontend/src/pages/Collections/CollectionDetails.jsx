@@ -527,12 +527,12 @@ import { useParams, useNavigate } from "react-router-dom";
 import { ArrowLeft, Pencil, Trash2 } from "lucide-react";
 import toast from "react-hot-toast";
 
-import { getCollections, deleteCollection } from "../../services/collection.api";
-import { getMemories } from "../../services/memory.api";
+import { getCollections, deleteCollection } from "../../services/collection.api.js";
+import { getMemories } from "../../services/memory.api.js";
 
-import MemoryCard from "../../components/memory/MemoryCard";
-import EmptyState from "../../components/ui/EmptyState";
-import ConfirmModal from "../../components/ui/ConfirmModal";
+import MemoryCard from "../../components/memory/MemoryCard.jsx";
+import EmptyState from "../../components/ui/EmptyState.jsx";
+import ConfirmModal from "../../components/ui/ConfirmModal.jsx";
 
 export default function CollectionDetails() {
   const { id } = useParams();

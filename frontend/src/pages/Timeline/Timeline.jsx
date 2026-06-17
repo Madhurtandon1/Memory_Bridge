@@ -282,9 +282,9 @@
 
 
 import { useEffect, useState } from "react";
-import SearchBar from "../../components/ui/SearchBar";
-import EmptyState from "../../components/ui/EmptyState";
-import { getTimeline } from "../../services/memory.api";
+import SearchBar from "../../components/ui/SearchBar.jsx";
+import EmptyState from "../../components/ui/EmptyState.jsx";
+import { getTimeline } from "../../services/memory.api.js";
 
 export default function Timeline() {
   const [timeline, setTimeline] = useState([]);

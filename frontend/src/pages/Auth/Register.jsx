@@ -358,7 +358,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ArrowRight, Check, Sparkles, History, Activity, Fingerprint } from "lucide-react";
 
-import { registerUser } from "../../services/auth.api";
+import { registerUser } from "../../services/auth.api.js";
 
 const features = [
   "Unlimited memory storage",

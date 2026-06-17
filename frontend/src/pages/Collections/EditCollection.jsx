@@ -385,7 +385,7 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
-import { getCollections, updateCollection } from "../../services/collection.api";
+import { getCollections, updateCollection } from "../../services/collection.api.js";
 
 export default function EditCollection() {
   const { id } = useParams();

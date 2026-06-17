@@ -1748,8 +1748,8 @@ import {
   Heart
 } from "lucide-react";
 
-import { useAuth } from "../../context/AuthContext";
-import { loginUser } from "../../services/auth.api";
+import { useAuth } from "../../context/AuthContext.jsx";
+import { loginUser } from "../../services/auth.api.js";
 
 export default function Login() {
   const navigate = useNavigate();

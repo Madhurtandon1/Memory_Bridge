@@ -101,8 +101,8 @@
 
 import { useEffect, useState } from "react";
 import { BookOpen, Sparkles } from "lucide-react";
-import { getTimeline } from "../../services/memory.api";
-import EmptyState from "../../components/ui/EmptyState";
+import { getTimeline } from "../../services/memory.api.js";
+import EmptyState from "../../components/ui/EmptyState.jsx";
 
 export default function Stories() {
   const [stories, setStories] = useState([]);

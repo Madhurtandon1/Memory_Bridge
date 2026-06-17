@@ -614,7 +614,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { Upload, Mic, CheckCircle, FolderHeart, Music, AlertCircle, Sparkles, Tag } from "lucide-react";
-import { getCollections } from "../../services/collection.api";
+import { getCollections } from "../../services/collection.api.js";
 
 export default function MemoryByAudio() {
   const [file, setFile] = useState(null);

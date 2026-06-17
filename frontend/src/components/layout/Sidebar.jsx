@@ -437,8 +437,8 @@ import {
   PlusCircle,
   X
 } from "lucide-react";
-import { useAuth } from "../../context/AuthContext";
-import { useUI } from "../../context/UIContext";
+import { useAuth } from "../../context/AuthContext.jsx";
+import { useUI } from "../../context/UIContext.jsx";
 
 const navItems = [
   { to: "/dashboard", icon: Grid3X3, label: "Dashboard" },

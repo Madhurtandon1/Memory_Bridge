@@ -1093,9 +1093,9 @@ import {
   AudioLines
 } from "lucide-react";
 import toast from "react-hot-toast";
-import ConfirmModal from "../../components/ui/ConfirmModal";
-import { getMemoryById, deleteMemory } from "../../services/memory.api";
-import { generateStory, generateStoryAudio } from "../../services/story.api";
+import ConfirmModal from "../../components/ui/ConfirmModal.jsx";
+import { getMemoryById, deleteMemory } from "../../services/memory.api.js";
+import { generateStory, generateStoryAudio } from "../../services/story.api.js";
 
 const voiceOptions = [
   { value: "narrator", label: "🌤 Warm Narrator" },

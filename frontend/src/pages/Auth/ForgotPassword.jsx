@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate, useSearchParams, useParams } from "react-router-dom";
 import { ArrowRight, ArrowLeft, ShieldCheck, Mail, Key, Eye, EyeOff } from "lucide-react";
-import { forgotPassword, resetPassword } from "../../services/auth.api";
+import { forgotPassword, resetPassword } from "../../services/auth.api.js";
 import toast from "react-hot-toast";
 
 export default function ForgotPassword() {

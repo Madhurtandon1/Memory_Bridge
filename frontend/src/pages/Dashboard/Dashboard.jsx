@@ -1060,14 +1060,14 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Plus, BookOpen, BookMarked, Sparkles, ArrowRight, Heart, Users, Compass } from "lucide-react";
-import { useAuth } from "../../context/AuthContext";
-import { getMemories, getInsights } from "../../services/memory.api";
-import { getCollections } from "../../services/collection.api";
-import { getLifeSummary } from "../../services/life.api"; // Imported your new endpoint
-import MemoryCard from "../../components/memory/MemoryCard";
-import CollectionCard from "../../components/collection/CollectionCard";
-import EmptyState from "../../components/ui/EmptyState";
-import { PageSkeleton } from "../../components/ui/Skeletons";
+import { useAuth } from "../../context/AuthContext.jsx";
+import { getMemories, getInsights } from "../../services/memory.api.js";
+import { getCollections } from "../../services/collection.api.js";
+import { getLifeSummary } from "../../services/life.api.js"; // Imported your new endpoint
+import MemoryCard from "../../components/memory/MemoryCard.jsx";
+import CollectionCard from "../../components/collection/CollectionCard.jsx";
+import EmptyState from "../../components/ui/EmptyState.jsx";
+import { PageSkeleton } from "../../components/ui/Skeletons.jsx";
 
 export default function Dashboard() {
   const navigate = useNavigate();

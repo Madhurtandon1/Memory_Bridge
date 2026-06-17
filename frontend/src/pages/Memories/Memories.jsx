@@ -1278,13 +1278,13 @@ import {
   getMemoriesByPerson, 
   getMemoriesByEmotion, 
   getMemoriesByEvent 
-} from "../../services/memory.api";
-import { getCollections } from "../../services/collection.api";
-import MemoryCard from "../../components/memory/MemoryCard";
-import SearchBar from "../../components/ui/SearchBar";
-import EmptyState from "../../components/ui/EmptyState";
-import { PageSkeleton } from "../../components/ui/Skeletons";
-import ConfirmModal from "../../components/ui/ConfirmModal"; 
+} from "../../services/memory.api.js";
+import { getCollections } from "../../services/collection.api.js";
+import MemoryCard from "../../components/memory/MemoryCard.jsx";
+import SearchBar from "../../components/ui/SearchBar.jsx";
+import EmptyState from "../../components/ui/EmptyState.jsx";
+import { PageSkeleton } from "../../components/ui/Skeletons.jsx";
+import ConfirmModal from "../../components/ui/ConfirmModal.jsx"; 
 import toast from "react-hot-toast";
 
 export default function Memories() {

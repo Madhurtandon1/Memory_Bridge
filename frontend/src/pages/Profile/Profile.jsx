@@ -518,9 +518,9 @@ import {
   updateProfile,
   changePassword,
   deleteAccount
-} from "../../services/auth.api";
-import { useAuth } from "../../context/AuthContext";
-import ConfirmModal from "../../components/ui/ConfirmModal";
+} from "../../services/auth.api.js";
+import { useAuth } from "../../context/AuthContext.jsx";
+import ConfirmModal from "../../components/ui/ConfirmModal.jsx";
 
 export default function Profile() {
   const navigate = useNavigate();

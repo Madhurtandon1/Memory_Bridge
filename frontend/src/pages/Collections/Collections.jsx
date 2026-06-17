@@ -303,11 +303,11 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Plus } from "lucide-react";
-import { getCollections } from "../../services/collection.api";
-import CollectionCard from "../../components/collection/CollectionCard";
-import SearchBar from "../../components/ui/SearchBar";
-import EmptyState from "../../components/ui/EmptyState";
-import { PageSkeleton } from "../../components/ui/Skeletons";
+import { getCollections } from "../../services/collection.api.js";
+import CollectionCard from "../../components/collection/CollectionCard.jsx";
+import SearchBar from "../../components/ui/SearchBar.jsx";
+import EmptyState from "../../components/ui/EmptyState.jsx";
+import { PageSkeleton } from "../../components/ui/Skeletons.jsx";
 
 export default function Collections() {
   const navigate = useNavigate();

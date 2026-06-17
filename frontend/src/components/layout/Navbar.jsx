@@ -397,10 +397,10 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Search, Bell, Menu, X, LogOut, User } from "lucide-react";
-import { useAuth } from "../../context/AuthContext";
-import { logoutUser } from "../../services/auth.api";
+import { useAuth } from "../../context/AuthContext.jsx";
+import { logoutUser } from "../../services/auth.api.js";
 import toast from "react-hot-toast";
-import { useUI } from "../../context/UIContext";
+import { useUI } from "../../context/UIContext.jsx";
 
 const pageTitles = {
   "/dashboard": "Dashboard",

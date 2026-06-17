@@ -4,32 +4,32 @@ import {
   Navigate,
 } from "react-router-dom";
 
-import Login from "../pages/auth/Login";
-import Register from "../pages/auth/Register";
+import Login from "../pages/auth/Login.jsx";
+import Register from "../pages/auth/Register.jsx";
 
-import Dashboard from "../pages/dashboard/Dashboard";
+import Dashboard from "../pages/dashboard/Dashboard.jsx";
 
-import Memories from "../pages/memories/Memories";
-import Collections from "../pages/collections/Collections";
-import CollectionDetails from "../pages/collections/CollectionDetails";
-import Timeline from "../pages/timeline/Timeline";
-import Stories from "../pages/stories/Stories";
-import Insights from "../pages/insights/Insights";
-import Assistant from "../pages/assistant/Assistant";
-import MemoryDetails from "../pages/memories/MemoryDetails";
-import EditMemory from "../pages/memories/EditMemory";
-import EditCollection from "../pages/collections/EditCollection";
-import CreateCollection from "../pages/collections/CreateCollection";
-import LegalAndSecurity from "../pages/legal/LegalAndSecurity";
-import Profile from "../pages/profile/Profile";
-import ForgotPassword from "../pages/auth/ForgotPassword";
-import MemoryByText from "../pages/memories/MemoryByText";
-import MemoryByAudio from "../pages/memories/MemoryByAudio";
+import Memories from "../pages/memories/Memories.jsx";
+import Collections from "../pages/collections/Collections.jsx";
+import CollectionDetails from "../pages/collections/CollectionDetails.jsx";
+import Timeline from "../pages/timeline/Timeline.jsx";
+import Stories from "../pages/stories/Stories.jsx";
+import Insights from "../pages/insights/Insights.jsx";
+import Assistant from "../pages/assistant/Assistant.jsx";
+import MemoryDetails from "../pages/memories/MemoryDetails.jsx";
+import EditMemory from "../pages/memories/EditMemory.jsx";
+import EditCollection from "../pages/collections/EditCollection.jsx";
+import CreateCollection from "../pages/collections/CreateCollection.jsx";
+import LegalAndSecurity from "../pages/legal/LegalAndSecurity.jsx";
+import Profile from "../pages/profile/Profile.jsx";
+import ForgotPassword from "../pages/auth/ForgotPassword.jsx";
+import MemoryByText from "../pages/memories/MemoryBYText.jsx";
+import MemoryByAudio from "../pages/memories/MemoryByAudio.jsx";
 
 
-import ProtectedRoute from "./ProtectedRoute";
+import ProtectedRoute from "./ProtectedRoute.jsx";
 
-import AppRoute from "../components/layout/AppLayout";
+import AppRoute from "../components/layout/AppLayout.jsx";
 
 const AppRoutes = () => {
 

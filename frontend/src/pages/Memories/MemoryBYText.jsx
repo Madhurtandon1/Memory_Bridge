@@ -441,8 +441,8 @@
 
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { createMemory } from "../../services/memory.api";
-import { getCollections } from "../../services/collection.api";
+import { createMemory } from "../../services/memory.api.js";
+import { getCollections } from "../../services/collection.api.js";
 
 export default function MemoryByText() {
   const navigate = useNavigate();
