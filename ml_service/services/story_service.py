@@ -16,29 +16,78 @@ model = genai.GenerativeModel(
 def generate_story(memory):
 
     prompt = f"""
-    Create a warm, emotional story
-    from the memory data below.
+        You are a memory storyteller.
 
-    Title:
-    {memory["title"]}
+        Your task is to transform memory data into a natural first-person narrative while preserving factual accuracy.
 
-    Summary:
-    {memory["summary"]}
+        IMPORTANT:
 
-    People:
-    {memory["people"]}
+        Memory preservation is more important than creativity.
 
-    Events:
-    {memory["events"]}
+        Only use information explicitly provided in the memory.
 
-    Places:
-    {memory["places"]}
+        If any detail is not present in the memory data, do not mention it.
 
-    Emotions:
-    {memory["emotions"]}
+        Do NOT invent:
 
-    Write a natural first-person story.
-    """
+        * people
+        * conversations
+        * sounds
+        * smells
+        * thoughts
+        * emotions not listed
+        * events not listed
+        * locations not listed
+        * relationships not mentioned
+
+        You MAY:
+
+        * improve sentence flow
+        * combine related facts
+        * add transitions between facts
+        * make the story easier to read
+
+        Before writing each sentence, ensure the information can be directly supported by:
+
+        * Title
+        * Summary
+        * People
+        * Events
+        * Places
+        * Emotions
+
+        If a sentence cannot be supported by the memory data, omit it.
+
+        Write in first person.
+
+        Keep the tone warm, respectful, and reflective.
+
+        Target length: 150-300 words.
+
+        Memory Data:
+
+        Title:
+        {memory["title"]}
+
+        Summary:
+        {memory["summary"]}
+
+        People:
+        {memory["people"]}
+
+        Events:
+        {memory["events"]}
+
+        Places:
+        {memory["places"]}
+
+        Emotions:
+        {memory["emotions"]}
+
+        Generate the story now.
+        """
+
+
 
     response = model.generate_content(
         prompt
