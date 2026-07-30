@@ -1,3 +1,4 @@
+<img width="1920" height="2965" alt="image" src="https://github.com/user-attachments/assets/2a024bbb-8557-43cc-a420-509447c3c2a7" />
 # 🧠 Memory Bridge
 
 > **AI-Powered Digital Memory Companion for Alzheimer's and Dementia Care**
